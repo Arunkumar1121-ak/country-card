@@ -10,9 +10,9 @@ function App() {
   return (
     <>
 
-      <BrowserRouter>
+      <BrowserRouter basename="/country-card">
         <Routes>
-          <Route path='/' exact element={<Countrylist/>} />
+          <Route path='/' element={<Countrylist/>} />
           <Route path='/Country/:name' element={<Countrydetails/>}/>
         </Routes>
       </BrowserRouter>
